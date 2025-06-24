@@ -28,6 +28,7 @@ public class EmployeeControllerIT {
 	@Autowired
 	private ObjectMapper objectMapper;
 	
+//	WORKING
 	@Test
 	public void findAllShouldReturnPagedResourcesSortedByName() throws Exception {
 		
@@ -42,6 +43,7 @@ public class EmployeeControllerIT {
 		result.andExpect(jsonPath("$.content[2].name").value("Andressa"));
 	}
 	
+//	WORKING
 	@Test
 	public void insertShouldInsertResource() throws Exception {
 
